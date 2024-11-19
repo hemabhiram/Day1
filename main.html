@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1 id="headingID">Heading 1</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit ipsum ducimus porro nulla qui ea praesentium debitis consectetur perferendis inventore fugit pariatur, asperiores, illo repellat odit, commodi cupiditate quibusdam!</p>
+    <button id="button">Click me</button>
+    <script>
+        let button = document.getElementById('button');
+        button.addEventListener('click', () => {
+            let heading1 = document.getElementById('headingID');
+            heading1.innerText = "Changed heading";
+            alert('Button clicked');
+        });
+    </script>
+</body>
+</html>
